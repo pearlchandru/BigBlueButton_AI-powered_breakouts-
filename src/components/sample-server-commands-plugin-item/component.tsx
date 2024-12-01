@@ -67,7 +67,7 @@ function SampleServerCommandsPluginItem(
     const payload = { chatData };
   
     try {
-      const response = await axios.post('https://xyloite.online:5000/receive', payload, {
+      const response = await axios.post('https://<bbb_server_hostname>:5000/receive', payload, {
         headers: { 'Content-Type': 'application/json' },
         timeout: 10000,
         withCredentials: true,
