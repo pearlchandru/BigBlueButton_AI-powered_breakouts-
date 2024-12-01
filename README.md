@@ -1,14 +1,17 @@
-# Sample Server Commands Plugin
+# Plugin consists of React component and Python component
 
 ## What is it?
 
-The Sample Server Commands Plugin serves as a demonstration of how developers can create their own custom plugins. This plugin includes a button in the actions menu options, that when clicked sends a message in the public chat.
+This prototype is AI moderator plugin for BigBlueButton. 
 
-![Gif of plugin demo](./public/assets/plugin.gif)
+After completion of Bigbluebutton3.x and generation of plugin-file, copy the javascript (.js) file to the below path
 
-See the **Usage** section of the main README to see how to build and run plugins.
+var/www/bigbluebutton-default/assets/plugins
 
-## Configuration Example
+## Identify the Configuration file 'settings.yml'path, if it is otherthan the below given path.
+## Then, modify it to include the plugin details as given below
+
+Path : /usr/share/bigbluebutton/html5-client/private/config/
 
 Add this to the `settings.yml` of the BBB HTML5-client:
 
@@ -20,4 +23,3 @@ public:
 ```
 
 Where `<<PLUGIN_URL>>` is the URL that points to the location where your bundled `SampleServerCommandsPlugin.js`-file is hosted.
-# BigBlueButton_AI-powered_breakouts-
