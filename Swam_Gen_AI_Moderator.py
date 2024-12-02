@@ -3,7 +3,7 @@ from flask_cors import CORS
 from swarm import Swarm, Agent
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True, resources={r"/receive": {"origins": "https://xyloite.online"}})
+CORS(app, supports_credentials=True, resources={r"/receive": {"origins": "https://<BBBhostname>"}})
 
 
 # Global variables for tracking
@@ -116,6 +116,6 @@ def receive_data():
 
 
 if __name__ == '__main__':
-    ssl_cert = '/etc/letsencrypt/live/xyloite.online/fullchain.pem'
-    ssl_key = '/etc/letsencrypt/live/xyloite.online/privkey.pem'
-    app.run(debug=True, host='143.110.219.97', port=5000, ssl_context=(ssl_cert, ssl_key))
+    ssl_cert = '/etc/letsencrypt/live/<BBBhostname>/fullchain.pem'
+    ssl_key = '/etc/letsencrypt/live/<BBBhostname>/privkey.pem'
+    app.run(debug=True, host='<BBB_host_IP>', port=5000, ssl_context=(ssl_cert, ssl_key))
