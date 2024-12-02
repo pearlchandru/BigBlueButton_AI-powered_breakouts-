@@ -1,8 +1,8 @@
-# Plugin consists of React component and Python component
+# AI moderator plugin for BigBlueButton breakout room
 
 ## What is it?
 
-This prototype is AI moderator plugin for BigBlueButton. 
+This prototype is AI moderator plugin for BigBlueButton. It consists front-end react component that runs at client-side and a python component that runs at server.
 
 After completion of Bigbluebutton3.x and generation of plugin-file, copy the javascript (.js) file to the below path
 
