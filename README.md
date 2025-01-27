@@ -4,7 +4,16 @@
 
 This prototype is AI moderator plugin for BigBlueButton. It consists front-end react component that runs at client-side and a python component that runs at server.
 
-After completion of Bigbluebutton3.x and generation of plugin-file, copy the javascript (.js) file to the below path
+## Step-by-step instructions to prepare generative AI moderator agent
+Step 1: Complete installation of BigBlueButton3.x.
+Step 2: Build the .js plugin-file from the given components either locally or in the BigBlueButton  server using the following scripts.
+
+cd $HOME/src/generative_AI_moderation
+npm ci
+npm run build-bundle
+
+
+Step 3: Copy the javascript (.js) plugin-file to the below path
 
 var/www/bigbluebutton-default/assets/plugins
 
