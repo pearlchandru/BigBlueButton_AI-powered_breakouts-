@@ -21,12 +21,11 @@ Step 3: Copy the javascript (.js) plugin-file to the below path
 ```
 var/www/bigbluebutton-default/assets/plugins
 ```
-Step 4:
-## Identify the Configuration file 'settings.yml'path, if it is otherthan the below given path,
+Step 4: Identify the Configuration file 'settings.yml'path, if it is otherthan the below given path,
 
 Path : /usr/share/bigbluebutton/html5-client/private/config/
 
-## Then, modify it to include the plugin details as given below
+Then, modify it to include the plugin details as given below
 Add this to the `settings.yml` of the BBB HTML5-client:
 
 ```yaml
