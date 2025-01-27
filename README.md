@@ -7,7 +7,7 @@ This prototype is AI moderator plugin for BigBlueButton. It consists front-end r
 ## Step-by-step instructions to prepare generative AI moderator agent
 Step 1: Complete installation of BigBlueButton3.x.
 
-Step 2: Build the .js plugin-file from the given components either locally or in the BigBlueButton  server using the following scripts.  in dist folder.
+Step 2: Build the .js plugin-file from the given components either locally or in the BigBlueButton  server using the following scripts.
 
 ```
 cd $HOME/src/generative_AI_moderation
@@ -38,4 +38,16 @@ public:
 Where `<<PLUGIN_URL>>` is the URL that points to the location where your bundled `SampleServerCommandsPlugin.js`-file is hosted.
 
 Step 5: 
-We use Open-AI SWARM Multi-agent orchestration and hence it requires an OpenAI API Key to connect OPENAI from the backend Python server.
+We use Open-AI SWARM Multi-agent orchestration and hence it requires an OpenAI API Key to connect OPENAI from the backend Python server. Go through https://platform.openai.com/docs/quickstart to get help on creation of API Keys.
+
+Step 6: 
+Install the python libraries given below (swarm, flask, flask_cors). Flask is used as back-end server to handle payloads between python and react and SWARM is OpenAI Multi-agent orchestration library.
+
+```
+pip install swarm
+pip install flask
+pip install flask_cors
+```
+
+Step 7: 
+Start the python server by calling the script `Swam_Gen_AI_Moderator.py` and begin the discussion in BigBlueButton that gets moderated by generative AI agents.
