@@ -1,4 +1,4 @@
-# AI moderator plugin for BigBlueButton breakout room
+# 🤖 AI moderator plugin for BigBlueButton breakout room
 
 ## What is it?
 
